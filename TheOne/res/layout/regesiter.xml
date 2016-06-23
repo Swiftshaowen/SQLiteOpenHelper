@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请填入以下信息进行注册"
+        android:layout_gravity="center_horizontal"
+        />
+    
+       <!-- 进行登录和注册的页面实现 -->
+    <LinearLayout 
+        android:layout_marginTop="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/tv1_regesite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号："
+            android:textSize="25sp"
+            />
+        <EditText 
+            android:id="@+id/youname_id_regesite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的手机号码"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/tv2_regesite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="25sp"
+            />
+        <EditText 
+            android:id="@+id/password_num_regesite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请牢记密码丢失找不回"
+            />
+    </LinearLayout>
+    <Button 
+        android:id="@+id/masure_regesite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="确定注册"
+        android:textColor="@android:color/holo_orange_light"
+        android:onClick="makesure"
+        />
+    
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.theone.MainActivity" >
+
+    <!-- 简单的一个欢迎提示语 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The One Welcome To You"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        />
+    <!-- 进行登录和注册的页面实现 -->
+    <LinearLayout 
+        android:layout_marginTop="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号："
+            android:textSize="25sp"
+            />
+        <EditText 
+            android:id="@+id/youname_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的手机号码"
+            />
+    </LinearLayout>
+    
+    、
+    <LinearLayout 
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="25sp"
+            />
+        <EditText 
+            android:id="@+id/password_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请牢记密码丢失找不回"
+            android:inputType="textPassword"
+            
+            />
+    </LinearLayout>
+    <Button 
+      
+        android:id="@+id/login_id"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="登  录"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ask"
+          android:layout_marginTop="30dp"
+        />
+    
+    <Button 
+        android:id="@+id/regesite_id"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="注  册"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:onClick="regesit"
+        />
+    
+  
+</LinearLayout>
